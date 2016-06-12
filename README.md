@@ -2,6 +2,8 @@ Workers
 ==============================================================================
 This package lets you easily push jobs onto a mongo-backed queue and have them asynchronously picked up and ran by a separate 'headless' meteor process.
 
+*Dervived from differential:workers, resolved MongoDB Authentication Bug*
+
 ## Goals
 - The code you write for you job handlers should look and behave just like the rest of your application code, and have access to the meteor API and packages you know and love.
 - Self contained deployment.  We wanted to be able to deploy our app just like we always have and not have a separate deployment for the application handling the jobs.

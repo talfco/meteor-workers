@@ -1,15 +1,15 @@
 Package.describe({
-  name: 'differential:workers',
-  summary: 'Spawn headless worker meteor processes to work on async jobs',
-  version: '2.0.5',
-  git: 'https://github.com/Differential/meteor-workers'
+  name: 'talfco:workers',
+  summary: 'Headless worker meteor processes derived from differential-workers',
+  version: '1.0.0',
+  git: 'https://github.com/talfco/meteor-workers'
 });
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
 
   Npm.depends({
-    monq: '0.3.1'
+    monq: '0.3.3'
   });
 
   api.use([
